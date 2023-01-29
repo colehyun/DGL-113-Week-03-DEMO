@@ -21,3 +21,11 @@ function addItem() {
     todosElement.innerHTML = items.join('');
 
 }
+
+    function clearList() {
+        count = 0;
+        items = [];
+        let todosElement = document.getElementById('todos');
+        todosElement.innerHTML = items.join('');
+    }
+
