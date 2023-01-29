@@ -1,6 +1,6 @@
 "use strict";
 
-let counter = 0;
+let count = 0;
 let items = [];
 
 function addItem() {
@@ -17,5 +17,7 @@ function addItem() {
 
     items.push( `<tr><td>${count}</td><td>${duration}</td><td>${description}</td></tr>` );
 
+    let todosElement = document.getElementById('todos');
+    todosElement.innerHTML = items.join('');
 
 }
