@@ -15,7 +15,7 @@ function addItem() {
 
     count += 1;
 
-    items.push( `<tr><td>${count}</td><td>${duration}</td><td>${description}</td></tr>` );
+    items.push( `<tr><th>${count}</td><th>${duration}</td><th>${description}</td></tr>` );
 
     let todosElement = document.getElementById('todos');
     todosElement.innerHTML = items.join('');
